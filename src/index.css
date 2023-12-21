@@ -1,0 +1,10 @@
+*{
+  font-family: 'Chillax', sans-serif;
+  box-sizing: border-box;
+
+
+}
+.ttColor::after:hover{
+  color:blue;
+
+}

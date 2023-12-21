@@ -1,0 +1,123 @@
+a.nav-link:hover {
+    color: rgb(23, 24, 23,0.8) !important;
+}
+.col-md-4.img img:hover {
+    transform: scale(1.2); 
+    transition: transform 0.2s ease; 
+}
+.col img {
+    background-color: linear-gradient(#3B7FBF); /* Ensure the image is behind the overlay */
+}
+.spacing{
+    letter-spacing: 2px;
+}
+.formlayout{
+    position: relative;
+    mix-blend-mode: normal;
+}
+form{
+    background-color: white;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.2);
+
+}
+figcaption{
+    position: absolute;
+    bottom: 15rem;
+    color:white;
+     margin: 0 4rem;
+     font-size: 1.6rem;
+     letter-spacing: 2px;
+}
+@media screen and (max-width: 768px) {
+    figcaption {
+        position: absolute;
+        bottom: 5rem;
+        margin: 5rem;
+        font-size:1rem;
+        color:white;
+    }
+}
+
+@media screen  and (max-width: 575.98px){
+    .text-resize-md {
+        position: inherit;
+        position:inherit;
+        bottom: inherit;
+        margin: .25rem 0px;
+        font-size: 10px;
+        color: inherit;
+    }
+}
+
+
+
+.text-resize {
+    font-size: 16px;
+}
+.text-resize-md{
+    font-size: 20px;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .text-resize-lg {
+        font-size: 42px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .text-resize-lg{
+        font-size: 25px;
+    }
+}
+@media (max-width: 767.98px) {
+    .text-resize-lg {
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .text-resize-md {
+        font-size: 16px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .text-resize-md{
+        font-size:20px;
+    }
+}
+
+@media (max-width: 575.98px){
+    .text-resize-md {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .text-resize-sm{
+        font-size:16px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .text-resize-sm{
+        font-size:14px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .text-resize-sm {
+        font-size: 12px;
+    }
+}
+@media (max-width: 767.98px) {
+    .txt {
+
+     font-size: 11px;
+    }
+}
+
