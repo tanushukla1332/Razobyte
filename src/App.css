@@ -1,25 +1,92 @@
+a.nav-link {
+    color:gray !important;
+    font-weight:500!important;
+    font-size: 18px!important;
+}
 a.nav-link:hover {
-    color: rgb(23, 24, 23,0.8) !important;
+    color:#3B7FBF !important;
+    text-decoration: underline;
+    text-underline-offset:10px;
+    text-decoration-thickness:2.5px
+
+
 }
-.col-md-4.img img:hover {
-    transform: scale(1.2); 
-    transition: transform 0.2s ease; 
+.btn1{
+    border: 2px solid #3B7FBF!important;
+    background-color: white!important;
+    color: rgb(36, 35, 35)!important;
+    font-weight:500!important;
+   
 }
-.col img {
-    background-color: linear-gradient(#3B7FBF); /* Ensure the image is behind the overlay */
+.btn1:hover{
+    background-color: black!important;
+    border: 2px solid white !important;
+    color: white !important;;
 }
-.spacing{
-    letter-spacing: 2px;
+
+.spacing p {
+    letter-spacing: 2px!important;
+    font-weight: 450!important;
+    font-size: 15px!important;
 }
+
+.spacing .spacing2 {
+    letter-spacing: 2px!important;
+    font-weight: 450!important;
+    font-size: 15px!important;
+
+
+}
+
 .formlayout{
     position: relative;
     mix-blend-mode: normal;
 }
-form{
-    background-color: white;
-    box-shadow: 5px 10px 10px rgba(0,0,0,0.2);
+.btn{
+    font-weight: 550!important;
+}
+.btn:hover{
+    color: #3B7FBF!important;
+    background-color:white!important;
+    font-weight: 550!important;
+    border-color:white!important;
+
 
 }
+Form{
+
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    text-align: center!important;
+
+   
+
+
+}
+/* Add this to your CSS */
+.form-group {
+    margin-bottom: 20px!important;
+    text-align: center!important;
+
+  
+}
+
+.form-label {
+    font-weight: bold!important;
+    text-align: center!important;
+    display: block!important; 
+    
+
+}
+
+.form-control {
+    width:50%!important; /* Make the input width 100% */
+    margin: auto;
+    text-align: center!important;
+    
+ 
+}
+
 figcaption{
     position: absolute;
     bottom: 15rem;
@@ -48,76 +115,119 @@ figcaption{
         color: inherit;
     }
 }
+/* For heading 1  */
 
-
-
-.text-resize {
-    font-size: 16px;
+.hed1{
+    font-size: 55px!important;
+    font-weight:bold !important;
+    letter-spacing: 2px !important;
 }
-.text-resize-md{
-    font-size: 20px;
-}
-
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .text-resize-lg {
-        font-size: 42px;
+    .hed1{
+        font-size: 30px;
     }
 }
-
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .text-resize-lg{
+    .hed1{
         font-size: 25px;
     }
 }
 @media (max-width: 767.98px) {
-    .text-resize-lg {
+    .hed1 {
         font-size: 20px;
     }
-}
-
-
-@media (min-width: 992px) {
-    .text-resize-md {
-        font-size: 16px;
-    }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .text-resize-md{
-        font-size:20px;
-    }
-}
-
-@media (max-width: 575.98px){
-    .text-resize-md {
+} 
+@media screen  and (max-width: 575.98px) {
+    .hed1 {
         font-size: 18px;
     }
 }
 
 
-@media (min-width: 992px) {
-    .text-resize-sm{
-        font-size:16px;
-    }
+/* For h2  */
+
+.hed2{
+    font-size: 38px!important;
+    font-weight:500!important;
+    letter-spacing: 2px!important;
+
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .text-resize-sm{
-        font-size:14px;
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .hed2{
+        font-size: 28px;
     }
 }
 
-/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hed2{
+        font-size: 20px;
+    }
+}
+@media (max-width: 767.98px) {
+    .hed2 {
+        font-size: 18px;
+    }
+}
+@media screen  and (max-width: 575.98px) {
+    .col.hed2 {
+        font-size: 16px;
+    }
+}
+/* heading 3  */
+.hed3{
+    font-size: 22px !important;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 992px) {
+    .hed3 {
+        font-size:20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hed3{
+        font-size:18px;
+    }
+}
+
+@media (max-width: 575.98px){
+    .hed3 {
+        font-size: 16px;
+    }
+}
+/* For parra */
+
+.sm{
+font-size: 15px!important;
+letter-spacing: 1px!important;
+font-weight: 450!important;
+}
+
+
+
+@media (min-width: 992px) {
+    .sm{
+        font-size:15px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .sm{
+        font-size:14.5px;
+    }
+}
+
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .text-resize-sm {
-        font-size: 12px;
+    .sm {
+        font-size: 11.5px;
     }
 }
 @media (max-width: 767.98px) {
     .txt {
 
-     font-size: 11px;
+     font-size: 10.5px;
     }
 }
 
