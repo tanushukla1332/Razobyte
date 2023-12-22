@@ -8,6 +8,8 @@ import { RxDoubleArrowRight } from "react-icons/rx";
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
 import { useState, useEffect } from 'react';
+import { FcGoogle } from "react-icons/fc";
+import { FaLinkedin,FaTwitter, FaApple } from "react-icons/fa";
 
 
 
@@ -50,6 +52,7 @@ export default function Home() {
     }, [])
 
     return (
+
         <>
             <Container fluid >
                 <Row className='py-3' style={{ backgroundColor: "#3B7FBF" }}
@@ -60,8 +63,8 @@ export default function Home() {
                             Marketing Mastery
                         </h3>
                         <p className=' sm '>Unleash the full potential of your brand with Razobyte's integrated IT solutions and creative digital marketing strategies. Our expertise bridges the latest technology with market-leading insights, ensuring your business stays ahead in a dynamic digital landscape. Partner with Razobyte to navigate the future of digital excellence.</p>
-                        <Button className=" btn mr-5" variant='dark'>Get in touch </Button>
-                        <Button variant='dark' className="mr-5 my-3">About Us</Button>
+                        <Button className=" btm mr-5" variant='dark'>Get in touch </Button>
+                        <Button variant='dark' className=" btm mr-5 my-3">About Us</Button>
                     </Col>
                     <Col md={7} className='mt-2'>
                         <Image src="https://razobyte.com/wp-content/uploads/2019/08/laptop-img.png" alt='' fluid
@@ -71,7 +74,7 @@ export default function Home() {
                 </Row>
                 <Row className=' d-none d-sm-flex justify-content-evenly'>
                     <Col md={6} className=' px-1 py-3 '>
-                        <Image src='https://cleancommit.io/static/4210533edc0ecaa67e1c734e159da855/30f07/website-programmer-resized.jpg' alt='' fluid style={{ maxWidth: "100%", maxHeight: "95%", borderRadius: "4px", boxShadow: "10px 0px 10px " }} /></Col>
+                        <Image src='././src/Components/Image/Web devices-amico.png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "95%", borderRadius: "4px", boxShadow: "2px 0px 2px rgba(0,0,0,0.2) "}} /></Col>
                     <Col className='mt-4 ml-4'>
                         <div className='spacing'>
                             <h1 className=' hed1 pb-4' style={{ color: "#3B7FBF" }}>Our Features</h1>
@@ -80,7 +83,7 @@ export default function Home() {
                             <div className='spacing2'>
                                 At <span className='text-dark font-weight-bold'>RazoByte SoftTech</span> we believe in the power of innovation and technology to transform your ideas into reality. Our team of skilled professionals is dedicated to crafting exceptional digital experiences that captivate your audience and drive tangible results. Whether you are a startup looking to establish your online presence or an established enterprise aiming to stay ahead in the digital race, we have the expertise and creativity to bring your vision to life.
                             </div>
-                            <Button variant='dark' className=' btn mb-5 pt-1' style={{ borderRadius: '5px' }} >Get a quote</Button>
+                            <Button variant='dark' className='btm my-3 pt-1' style={{ borderRadius: '5px' }} >Get a quote</Button>
 
                         </div>
                     </Col>
@@ -97,7 +100,7 @@ export default function Home() {
                                 At <span className='text-dark font-weight-bold'>RazoByte SoftTech</span> we believe in the power of innovation and technology to transform your ideas into reality. Our team of skilled professionals is dedicated to crafting exceptional digital experiences that captivate your audience and drive tangible results. Whether you are a startup looking to establish your online presence or an established enterprise aiming to stay ahead in the digital race, we have the expertise and creativity to bring your vision to life.
                             </div>
 
-                            <Button variant='light' className=' btn mb-5 pt-1' style={{ borderRadius: '1px' }} >Get a quote</Button>
+                            <Button variant='light' className='btm my-3 pt-1' style={{ borderRadius: '1px' }} >Get a quote</Button>
                         </div>
 
 
@@ -105,9 +108,10 @@ export default function Home() {
 
                     </Col>
                     <Col md={6} className='px-1 py-3'>
-                        <Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsVIREvjdFg0PLDXwcNzIuYAFP2n3tl_7JGg&usqp=CAU' alt=''
+                        <Image src='././src/Components/Image/Web devices-amico.png' alt=''
 
-                            style={{ width: "100%", maxHeight: "100%", borderRadius: "4px", boxShadow: "10px 0px 10px " }}
+                            style={{ width: "100%", maxHeight: "100%", borderRadius: "3px",
+                             boxShadow: "2px 0px 2px rgba(0,0,0,0.2)" }}
                             fluid /></Col>
                 </Row>
                 <Row style={{ backgroundColor: "#3B7FBF" }} className='py-5 justify-content-evenly'>
@@ -126,35 +130,64 @@ export default function Home() {
                         <div className='justify-content-center align-items-center'>
 
                             <Form className=' Form rounded-1 p-4 p-sm-3'>
-                                <h2 className='hed2 text-center my-5'>Sign in</h2>
-                                <FormGroup controlId='formBasicName'>
-                                    <FormLabel>Name
-                                    </FormLabel>
-                                    <FormControl type='text' placeholder=' enter your name' required />
-                                    <FormText className='text-light'>We w'ill never share your Details</FormText>
+                            <FormGroup >
+                                    <FormLabel>Name</FormLabel>
+                                    <FormControl type='text' placeholder='Enter your name' required />
                                 </FormGroup>
+                                <FormGroup></FormGroup>
+
+
                                 <FormGroup >
                                     <FormLabel>Email Adress</FormLabel>
                                     <FormControl type='email' placeholder='Enter your email' required />
                                 </FormGroup>
                                 <FormGroup>
-                                    <FormLabel>Password</FormLabel>
-                                    <FormControl type='password' placeholder='Enter your password' required />
+                                    <FormLabel>Phone</FormLabel>
+                                    <FormControl type='number' placeholder='Enter your number' required />
                                 </FormGroup>
+                                <FormGroup>
+                                <FormLabel>Project</FormLabel>
+                                <FormControl as='select' placeholder='Project type' required >
+                                <option value=''disabled>Project type</option>
+                                <option value=''>SEO</option>
+                                <option value=''>SMO</option>
+                                <option value=''>SEM PPC</option>
+                                <option value=''>Mobile app developement</option>
+                                <option value=''>E Commerece Website</option>
+                                <option value=''>Other</option>
+                                </FormControl>
+
+
+                            </FormGroup>
                                 <FormGroup controlId='formBasicCheckbox'>
                                     <FormCheck type="checkbox" label="Remember Me ">
                                     </FormCheck>
-
                                 </FormGroup>
+                                <Button  type="submit" variant='outline-dark' className='my-2 px-5 mx-5'
+                                style={{width:"80%"}}>Submit</Button>
+                                <div className='text-center'>
+                                <p className='sm mx-5'>if you don't have an account <span className='text-primary text-decoration-underline'>sign up</span> </p>
+                                <hr />
+                                <p className='sm text-center'>or</p>
+                                <p>
+                                <a href="https://www.google.com"  target="_blank"><FcGoogle size={32} /></a>
+                                <a href='https://www.linkedin.com' target="_blank" className='mx-1'><FaLinkedin size={32} color='blue' /></a>
+                                <a href='https://www.twitter.com' target="_blank" className='mx-1'><FaTwitter size={32} color='3B7FBF'/></a>
+                                <a href='https://www.apple.com' target="_blank">< FaApple size={32} color='black'/></a>
+                                
+                                </p>
 
-                                <FormGroup >
-                                    <FormLabel>Upload your resume here </FormLabel>
-                                    <FormControl type='file' placeholder='Enter your password' required />
-                                    <FormText>please upload clean and updated resume</FormText>
-                                </FormGroup>
 
+                            
+                                
 
-                                <Button type='submit' variant='outline-dark' className='m-3 px-4' size='sm'>submit</Button>
+                                
+
+                                </div>
+
+                                
+
+                                
                             </Form>
                         </div>
                     </Col>

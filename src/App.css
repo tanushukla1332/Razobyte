@@ -12,17 +12,14 @@ a.nav-link:hover {
 
 }
 .btn1{
-    border: 2px solid #3B7FBF!important;
-    background-color: white!important;
-    color: rgb(36, 35, 35)!important;
-    font-weight:500!important;
-   
+    color: #3B7FBF!important;
 }
-.btn1:hover{
-    background-color: black!important;
-    border: 2px solid white !important;
-    color: white !important;;
+
+.btn1:hover {
+    background-color: black !important;
+    color: white !important;
 }
+
 
 .spacing p {
     letter-spacing: 2px!important;
@@ -42,10 +39,10 @@ a.nav-link:hover {
     position: relative;
     mix-blend-mode: normal;
 }
-.btn{
+.btm{
     font-weight: 550!important;
 }
-.btn:hover{
+.btm:hover{
     color: #3B7FBF!important;
     background-color:white!important;
     font-weight: 550!important;
@@ -53,38 +50,34 @@ a.nav-link:hover {
 
 
 }
-Form{
-
+.Form{
     background-color: white;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
-    text-align: center!important;
-
-   
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2)!important;
 
 
 }
 /* Add this to your CSS */
-.form-group {
-    margin-bottom: 20px!important;
-    text-align: center!important;
-
+.form-Group {
+    margin-bottom:10px!important;
   
 }
 
 .form-label {
+    margin-top:15px;
+    margin-left:55px;
     font-weight: bold!important;
-    text-align: center!important;
     display: block!important; 
-    
-
 }
 
 .form-control {
-    width:50%!important; /* Make the input width 100% */
+    width:80%!important; /* Make the input width 100% */
     margin: auto;
-    text-align: center!important;
-    
- 
+    border: none!important;
+    border-bottom: 1px solid gray!important;
+}
+.form-check{
+    margin-left:55px;
+    margin-top: 10px;
 }
 
 figcaption{
