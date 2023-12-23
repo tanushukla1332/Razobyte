@@ -117,22 +117,22 @@ figcaption{
 }
 @media (min-width: 992px) {
     .hed1{
-        font-size: 30px;
+        font-size: 55px!important;
     }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
     .hed1{
-        font-size: 25px;
+        font-size: 45px!important;
     }
 }
 @media (max-width: 767.98px) {
     .hed1 {
-        font-size: 20px;
+        font-size: 30px!important;
     }
 } 
 @media screen  and (max-width: 575.98px) {
     .hed1 {
-        font-size: 18px;
+        font-size: 20px!important;
     }
 }
 
@@ -149,23 +149,23 @@ figcaption{
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .hed2{
-        font-size: 28px;
+        font-size: 38px!important;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .hed2{
-        font-size: 20px;
+        font-size: 30px!important;
     }
 }
 @media (max-width: 767.98px) {
     .hed2 {
-        font-size: 18px;
+        font-size: 20px!important;
     }
 }
 @media screen  and (max-width: 575.98px) {
-    .col.hed2 {
-        font-size: 16px;
+    .hed2 {
+        font-size: 18px!important;
     }
 }
 /* heading 3  */
@@ -176,19 +176,24 @@ figcaption{
 
 @media (min-width: 992px) {
     .hed3 {
-        font-size:20px;
+        font-size:22px!important;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .hed3{
-        font-size:18px;
+        font-size:20px!important;
+    }
+}
+@media (max-width: 767.98px) {
+    .hed3 {
+        font-size: 18px!important;
     }
 }
 
 @media (max-width: 575.98px){
     .hed3 {
-        font-size: 16px;
+        font-size: 16px!important;
     }
 }
 /* For parra */
@@ -203,14 +208,20 @@ font-weight: 450!important;
 
 @media (min-width: 992px) {
     .sm{
-        font-size:15px;
+        font-size:15px!important;
     }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
     .sm{
-        font-size:14.5px;
+        font-size:13.5px;
     }
 }
+@media (max-width: 767.98px) {
+    .sm {
+        font-size: 12.5px!important;
+    }
+}
+
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .sm {

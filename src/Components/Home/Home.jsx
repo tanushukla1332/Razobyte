@@ -58,7 +58,7 @@ export default function Home() {
                 <Row className='py-3' style={{ backgroundColor: "#3B7FBF" }}
                 >
                     <Col className='text-light'>
-                        <h1 className='  hed1 mt-5 '>Revolutionize </h1>
+                        <h1 className='hed1  mt-5 '>Revolutionize </h1>
                         <h3 className=' hed3 '>Your Business with Razobyte's Innovative Tech &
                             Marketing Mastery
                         </h3>
@@ -148,7 +148,7 @@ export default function Home() {
                                 <FormGroup>
                                 <FormLabel>Project</FormLabel>
                                 <FormControl as='select' placeholder='Project type' required >
-                                <option value=''disabled>Project type</option>
+                                <option value=''>Project type</option>
                                 <option value=''>SEO</option>
                                 <option value=''>SMO</option>
                                 <option value=''>SEM PPC</option>
