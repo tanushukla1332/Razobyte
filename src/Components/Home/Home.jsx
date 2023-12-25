@@ -9,7 +9,7 @@ import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
 import { useState, useEffect } from 'react';
 import { FcGoogle } from "react-icons/fc";
-import { FaLinkedin,FaTwitter, FaApple } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaApple } from "react-icons/fa";
 
 
 
@@ -74,7 +74,7 @@ export default function Home() {
                 </Row>
                 <Row className=' d-none d-sm-flex justify-content-evenly'>
                     <Col md={6} className=' px-1 py-3 '>
-                        <Image src='././src/Components/Image/Web devices-amico.png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "95%", borderRadius: "4px", boxShadow: "2px 0px 2px rgba(0,0,0,0.2) "}} /></Col>
+                        <Image src='././src/Components/Image/Web devices-amico.png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "95%", borderRadius: "4px", boxShadow: "2px 0px 2px rgba(0,0,0,0.2) " }} /></Col>
                     <Col className='mt-4 ml-4'>
                         <div className='spacing'>
                             <h1 className=' hed1 pb-4' style={{ color: "#3B7FBF" }}>Our Features</h1>
@@ -90,7 +90,6 @@ export default function Home() {
 
                 </Row>
                 <Row className='d-block d-sm-none  justify-content-evenly'>
-
                     <Col className='mt-4' >
                         <div className='spacing'>
                             <h1 className='hed1 pb-4' style={{ color: "#3B7FBF" }}>Our Features</h1>
@@ -102,35 +101,28 @@ export default function Home() {
 
                             <Button variant='light' className='btm my-3 pt-1' style={{ borderRadius: '1px' }} >Get a quote</Button>
                         </div>
-
-
-
-
                     </Col>
                     <Col md={6} className='px-1 py-3'>
                         <Image src='././src/Components/Image/Web devices-amico.png' alt=''
-
-                            style={{ width: "100%", maxHeight: "100%", borderRadius: "3px",
-                             boxShadow: "2px 0px 2px rgba(0,0,0,0.2)" }}
+                            style={{
+                                width: "100%", maxHeight: "100%", borderRadius: "3px",
+                                boxShadow: "2px 0px 2px rgba(0,0,0,0.2)"
+                            }}
                             fluid /></Col>
                 </Row>
-                <Row style={{ backgroundColor: "#3B7FBF" }} className='py-5 justify-content-evenly'>
-                    <Col md={5}>
-                        <div className='text-light spacing'>
-                            <h1 className='hed1'>Transforming Ideas into Digital Solutions</h1>
-                            <p className='mt-5'>Welcome to <span className='text-dark font-weight-bold'>RazoByte SoftTech</span>, a leading IT Services and Digital solutions company empowering businesses globally. We specialize in delivering cutting-edge solutions that drive growth and propel your brand to new heights. With a comprehensive suite of services ranging from web design and development to mobile app design and development, ecommerce solutions, IoT integration, and digital marketing, we have all the tools you need to succeed in the digital landscape.</p>
-                            <div className='spacing2'>
-                                At <span className='text-dark font-weight-bold'>RazoByte SoftTech</span> we believe in the power of innovation and technology to transform your ideas into reality. Our team of skilled professionals is dedicated to crafting exceptional digital experiences that captivate your audience and drive tangible results. Whether you are a startup looking to establish your online presence or an established enterprise aiming to stay ahead in the digital race, we have the expertise and creativity to bring your vision to life.
-                            </div>
-                        </div>
-                    </Col>
-                    <Col md={5}>
-                        <h2 className=' hed2 text-resize-lg  text-center formlayout text-light'>Let's Talk To Our Experts</h2>
+
+
+                <Row style={{ background: "#3B7FBF" }} className='py-5 px-0 justify-content-evenly' >
+                    <h2 className=' hed2 text-resize-lg  text-center formlayout text-light mb-5'>Let's Talk To Our Experts</h2>
+
+                    <Col md={5} className='mb-3 px-1 py-3'>
 
                         <div className='justify-content-center align-items-center'>
 
-                            <Form className=' Form rounded-1 p-4 p-sm-3'>
-                            <FormGroup >
+                            <Form className='Form p-4'
+
+                            >
+                                <FormGroup >
                                     <FormLabel>Name</FormLabel>
                                     <FormControl type='text' placeholder='Enter your name' required />
                                 </FormGroup>
@@ -146,148 +138,181 @@ export default function Home() {
                                     <FormControl type='number' placeholder='Enter your number' required />
                                 </FormGroup>
                                 <FormGroup>
-                                <FormLabel>Project</FormLabel>
-                                <FormControl as='select' placeholder='Project type' required >
-                                <option value=''>Project type</option>
-                                <option value=''>SEO</option>
-                                <option value=''>SMO</option>
-                                <option value=''>SEM PPC</option>
-                                <option value=''>Mobile app developement</option>
-                                <option value=''>E Commerece Website</option>
-                                <option value=''>Other</option>
-                                </FormControl>
+                                    <FormLabel>Project</FormLabel>
+                                    <FormControl as='select' placeholder='Project type' required >
+                                        <option value=''>Project type</option>
+                                        <option value=''>SEO</option>
+                                        <option value=''>SMO</option>
+                                        <option value=''>SEM PPC</option>
+                                        <option value=''>Mobile app developement</option>
+                                        <option value=''>E Commerece Website</option>
+                                        <option value=''>Other</option>
+                                    </FormControl>
 
 
-                            </FormGroup>
+                                </FormGroup>
                                 <FormGroup controlId='formBasicCheckbox'>
                                     <FormCheck type="checkbox" label="Remember Me ">
                                     </FormCheck>
                                 </FormGroup>
-                                <Button  type="submit" variant='outline-dark' className='my-2 px-5 mx-5'
-                                style={{width:"80%"}}>Submit</Button>
-                                <div className='text-center'>
-                                <p className='sm mx-5'>if you don't have an account <span className='text-primary text-decoration-underline'>sign up</span> </p>
-                                <hr />
-                                <p className='sm text-center'>or</p>
-                                <p>
-                                <a href="https://www.google.com"  target="_blank"><FcGoogle size={32} /></a>
-                                <a href='https://www.linkedin.com' target="_blank" className='mx-1'><FaLinkedin size={32} color='blue' /></a>
-                                <a href='https://www.twitter.com' target="_blank" className='mx-1'><FaTwitter size={32} color='3B7FBF'/></a>
-                                <a href='https://www.apple.com' target="_blank">< FaApple size={32} color='black'/></a>
-                                
-                                </p>
-
-
-                            
-                                
-
-                                
-
+                                <div className='w-100  d-flex justify-content-center align-items-center'>
+                                    <Button type="submit" variant='outline-dark' className='my-4 px-5 btnsubmit'
+                                        style={{ width: "80%" }}>Submit</Button>
                                 </div>
 
-                                
+                                <div className='text-center'>
+                                    <p className='sm mx-5'>if you don't have an account <span className='text-primary text-decoration-underline'>Go with </span> </p>
+                                    <hr />
+                                    <p className='sm text-center'>or</p>
+                                    <p>
 
-                                
+                                        <a href="https://www.google.com" target="_blank"><FcGoogle size={32} /></a>
+                                        <a href='https://www.linkedin.com' target="_blank" className='mx-3'><FaLinkedin size={32} color='blue' /></a>
+                                        <a href='https://www.twitter.com' target="_blank" ><FaTwitter size={32} color='3B7FBF' className='mx-3' /></a>
+                                        <a href='https://www.apple.com' target="_blank">< FaApple size={32} color='black' /></a>
+                                    </p>
+                                </div>
                             </Form>
                         </div>
                     </Col>
+                    <Col md={5} className='mt-5 px-1 d-flex align-items-center justify-content-center' style={{
+                        paddingBottom: "32px",
+                        paddingTop: "10px",
+                    }}>
+                        // <img src="./src/Components/Image/svg.png" alt="" className='img-fluid'
+
+
+                        />
+
+                    </Col>
                 </Row>
 
-
-                <Row style={{ backgroundColor: "#3B7FBF" }} className='py-5'>
-                    <Col>
-                        <div style={{ marginLeft: "25px" }}>
-                            <h1>Satisfies customers</h1>
-                            <p>Those who are already tired it</p>
-                        </div>
-                        <Row className='px-0 justify-content-evenly '>
-                            <Col md={4} className='mb-2'>
-                                <Card className='rounded-3'>
-                                    <CardImg variant="top" src='https://images.pexels.com/photos/1839963/pexels-photo-1839963.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginLeft: "10px", marginTop: "5px" }} />
-                                    <CardBody >
-                                        <CardTitle>Chandler
+                
+                <Row className='my-5 d-block'>
+                    <h2 className='text-center'> My Awesome Services</h2>
+                    <p className='text-center'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, unde!</p>
+                    <Col >
+                        <Row className='d-flex justify-content-center'>
+                            <Col lg={4} className='mb-3'>
+                                <Card className='align-items-center img-fluid custom-card'>
+                                    <CardImg variant="top" src="./src/Components/Image/innovative-web.png" fluid style={{ maxHeight: '50px', maxWidth: "50px"}}className='my-3' />
+                                    <CardBody className='text-center'>
+                                        <CardTitle>
+                                            <h3 className='hed3'>Innovative Web Design</h3>
                                         </CardTitle>
-                                        <p>Deo thomes</p>
-                                        <CardText>
-                                            “Every detail has been taken care these team are realy amazing and talented! I will work only to help your sales goals.”
-                                        </CardText>
-                                    </CardBody>
-                                </Card>
-                            </Col>
-                            <Col md={4} className='mb-2'>
-                                <Card className='rounded-3'>
-                                    <CardImg variant="top" src='https://images.pexels.com/photos/1839963/pexels-photo-1839963.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginLeft: "10px", marginTop: "5px" }} />
-                                    <CardBody >
-                                        <CardTitle>Chandler
-                                        </CardTitle>
-                                        <p>Deo thomes</p>
-                                        <CardText>
-                                            “Every detail has been taken care these team are realy amazing and talented! I will work only to help your sales goals.”
+                                        <CardText >
+                                            <p className='sm'> Revolutionizing User Experiences: The Future of Innovative Web Design</p>    <Button variant='dark' className='btn1'  href='./#'>Read more</Button>
                                         </CardText>
                                     </CardBody>
                                 </Card>
 
                             </Col>
-                            <Col md={4} className='mb-2'>
-                                <Card className='rounded-3'>
-                                    <CardImg variant="top" src='https://images.pexels.com/photos/1839963/pexels-photo-1839963.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginLeft: "10px", marginTop: "5px" }} />
-                                    <CardBody >
-                                        <CardTitle>Chandler
+                            <Col lg={4} className='mb-3'>
+                                <Card className='align-items-center custom-card'>
+                                    <CardImg variant="top" src="./src/Components/Image/ecommerce-solutions.png" fluid style={{ maxHeight: '50px', maxWidth: "50px"}}  className='my-3'/>
+                                    <CardBody className='text-center'>
+                                        <CardTitle >
+                                            <h3 className='hed3'>Ecommerece Solutions</h3>
+                                            
                                         </CardTitle>
-                                        <p>Deo thomes</p>
-                                        <CardText>
-                                            “Every detail has been taken care these team are realy amazing and talented! I will work only to help your sales goals.”
-                                        </CardText>
+                                        <CardText >
+                                            <p className='sm'> Empowering Online Success: Cutting-Edge Ecommerce Solutions for Businesses</p> 
+                                            <Button variant='dark' className='btn1'  href='./#'>Read more</Button>
+                                            </CardText>
+                                            
                                     </CardBody>
                                 </Card>
 
+                            </Col>
+                            <Col lg={4} className='mb-3'>
+                                <Card className='align-items-center custom-card'>
+                                    <CardImg variant="top" src="./src/Components/Image/seo-services.png" fluid style={{ maxHeight: '50px', maxWidth: "50px"}} className='my-3' />
+                                    <CardBody className='text-center'>
+                                        <CardTitle>
+                                            <h3 className='hed3'>Search Enggine  Optimization</h3>
+                                        </CardTitle>
+                                        <CardText >
+                                            <p className='sm'>Unlocking Digital Visibility: Maximizing Results with Search Engine Optimization Lo</p>
+                                            
+                                            <Button variant='dark' className='btn1'  href='./#'>Read more</Button>
+                                        </CardText>
+                                    </CardBody>
+                                </Card>
                             </Col>
                         </Row>
                     </Col>
-                </Row>
+                    <Col className='mt-3'>
+                        <Row className='d-flex justify-content-center '>
+                            <Col lg={4} className='mb-3'>
+                                <Card className='align-items-center custom-card'>
+                                    <CardImg variant="top" src="./src/Components/Image/local-listings.png" fluid style={{ maxHeight: '50px', maxWidth: "40px" }}  className='my-3'/>
+                                    <CardBody className='text-center'>
+                                        <CardTitle>
+                                            <h3 className='hed3'>Google Local Listing</h3>
+                                        </CardTitle>
+                                        <CardText >
+                                            <p className='sm'>Boost Your Local Presence: Harnessing the Power of Google Local Listings</p>
+                                            <Button variant='dark' className='btn1'href='./#'>Read more</Button>
+                                        </CardText>
+                                    </CardBody>
+                                </Card>
 
 
-                <Row >
-                    <Col className='px-0 '>
-                        <h1 className='text-center text-resize-lg py-3'>Our Networks</h1>
-                        <div>
-                            <Carousel>
-                                <CarouselItem>
-                                    <Image src='https://b1831098.smushcdn.com/1831098/wp-content/uploads/2019/03/Google-AdWords-vs-Google-Ads.png?lossy=1&strip=1&webp=1' fluid className="d-block w-100" style={{ height: "350px" }} />
-                                </CarouselItem>
-                                <CarouselItem>
-                                    <Image src="https://d57439wlqx3vo.cloudfront.net/iblock/a23/a2363483305a7b65315468d11e1dc96f/94a24431c6657496283e12b98df56804.png" fluid className=' d-block w-100' style={{ height: "350px" }}></Image>
+                            </Col>
+                            <Col lg={4} className='mb-3'>
+                                <Card className='align-items-center custom-card'>
+                                    <CardImg variant="top" src="./src/Components/Image/adwords-ppc.png" fluid style={{ maxHeight: '50px', maxWidth: "40px" }}className='my-3' />
+                                    <CardBody className='text-center'>
+                                        <CardTitle>
+                                            <h3 className='hed3'>Google Adwords(PPC)</h3>
+                                        </CardTitle>
+                                        <CardText>
+                                            <p className='sm'>Accelerate Your Online Growth: Unleashing the Potential of Search Engine Marketing</p>
+                                            <Button variant='dark' className='btn1' href='./#'>Read more</Button>
+                                        </CardText>
+                                    </CardBody>
+                                </Card>
 
-                                </CarouselItem>
-                                <CarouselItem>
-                                    <Image src="https://www.digitalvidya.com/blog/wp-content/uploads/2019/03/Bing-Ads.webp" fluid className=' d-block w-100' style={{ height: "350px" }}></Image>
-                                </CarouselItem>
-                                <CarouselItem>
-                                    <Image src="https://www.flatlineagency.com/wp-content/uploads/2023/12/Untitled-design-3-1024x582.png" fluid className=' d-block w-100 ' style={{ height: "350px" }}></Image>
-                                </CarouselItem>
-                                <CarouselItem>
-                                    <Image src='https://wallpapers.com/images/featured/blank-h9v8oske8iey8nkq.webp' fluid className=' d-block w-100' style={{ height: "350px" }}></Image>
-                                    <CarouselCaption>
-                                        <h3>Databox</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    </CarouselCaption>
-                                </CarouselItem>
-                            </Carousel>
-                        </div>
+                            </Col>
+                            <Col lg={4} className='mb-3'>
+                                <Card className='align-items-center custom-card'>
+                                    <CardImg variant="top" src="./src/Components/Image/smo-services.png" fluid style={{ maxHeight: '50px', maxWidth: "40px"}}className='my-3' />
+                                    <CardBody className='text-center '>
+                                        <CardTitle>
+                                            <h3 className='hed3'>Social Media Optimization</h3>
+                                        </CardTitle>
+                                        <CardText>
+                                            <p className='sm'>Mastering Social Media Optimization (SMO) for Success</p>
+                                            <Button variant='dark' className='btn1'  href='./#'>Read more</Button>
+                                        </CardText>
+                                    </CardBody>
+                                </Card>
+
+                            </Col>
+
+                        </Row>
                     </Col>
+
                 </Row>
 
-                <Row className='justify-content-evenly'>
-                    <Col xs={12} className='align-items-center px-0'>
-                        <figure className='position-relative'>
-                            <img src={imgdata[image]} alt="" className='img-fluid w-100' style={{ height: "500px", opacity: 1.5 }} />
-                            <figcaption >{array[text]}</figcaption>
-                        </figure>
-                    </Col>
-                </Row>
+
+                
+
+
+            
+
+
+
+
+
+
+               
+
 
 
             </Container >
+
         </>
+
     )
 }
