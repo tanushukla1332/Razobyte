@@ -10,6 +10,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import { useState, useEffect } from 'react';
 import { FcGoogle } from "react-icons/fc";
 import { FaLinkedin, FaTwitter, FaApple } from "react-icons/fa";
+import Marquee from 'react-fast-marquee';
 
 
 
@@ -74,7 +75,7 @@ export default function Home() {
                 </Row>
                 <Row className=' d-none d-sm-flex justify-content-evenly'>
                     <Col md={6} className=' px-1 py-3 '>
-                        <Image src='././src/Components/Image/Web devices-amico.png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "95%", borderRadius: "4px", boxShadow: "2px 0px 2px rgba(0,0,0,0.2) " }} /></Col>
+                        <Image src='./src/Components/Image/Web devices-amico (1).png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "95%", borderRadius: "4px", boxShadow: "2px 0px 2px rgba(0,0,0,0.2) " }} /></Col>
                     <Col className='mt-4 ml-4'>
                         <div className='spacing'>
                             <h1 className=' hed1 pb-4' style={{ color: "#3B7FBF" }}>Our Features</h1>
@@ -179,7 +180,7 @@ export default function Home() {
                         paddingBottom: "32px",
                         paddingTop: "10px",
                     }}>
-                        // <img src="./src/Components/Image/svg.png" alt="" className='img-fluid'
+                        <img src="./src/Components/Image/svg-removebg-preview (2).png" alt="" className='img-fluid'
 
 
                         />
@@ -187,7 +188,7 @@ export default function Home() {
                     </Col>
                 </Row>
 
-                
+
                 <Row className='my-5 d-block'>
                     <h2 className='text-center'> My Awesome Services</h2>
                     <p className='text-center'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, unde!</p>
@@ -195,13 +196,13 @@ export default function Home() {
                         <Row className='d-flex justify-content-center'>
                             <Col lg={4} className='mb-3'>
                                 <Card className='align-items-center img-fluid custom-card'>
-                                    <CardImg variant="top" src="./src/Components/Image/innovative-web.png" fluid style={{ maxHeight: '50px', maxWidth: "50px"}}className='my-3' />
+                                    <CardImg variant="top" src="./src/Components/Image/innovative-web.png" fluid style={{ maxHeight: '50px', maxWidth: "50px" }} className='my-3' />
                                     <CardBody className='text-center'>
                                         <CardTitle>
                                             <h3 className='hed3'>Innovative Web Design</h3>
                                         </CardTitle>
                                         <CardText >
-                                            <p className='sm'> Revolutionizing User Experiences: The Future of Innovative Web Design</p>    <Button variant='dark' className='btn1'  href='./#'>Read more</Button>
+                                            <p className='sm'> Revolutionizing User Experiences: The Future of Innovative Web Design</p>    <Button variant='dark' className='btn1' href='./#'>Read more</Button>
                                         </CardText>
                                     </CardBody>
                                 </Card>
@@ -209,32 +210,32 @@ export default function Home() {
                             </Col>
                             <Col lg={4} className='mb-3'>
                                 <Card className='align-items-center custom-card'>
-                                    <CardImg variant="top" src="./src/Components/Image/ecommerce-solutions.png" fluid style={{ maxHeight: '50px', maxWidth: "50px"}}  className='my-3'/>
+                                    <CardImg variant="top" src="./src/Components/Image/ecommerce-solutions.png" fluid style={{ maxHeight: '50px', maxWidth: "50px" }} className='my-3' />
                                     <CardBody className='text-center'>
                                         <CardTitle >
                                             <h3 className='hed3'>Ecommerece Solutions</h3>
-                                            
+
                                         </CardTitle>
                                         <CardText >
-                                            <p className='sm'> Empowering Online Success: Cutting-Edge Ecommerce Solutions for Businesses</p> 
-                                            <Button variant='dark' className='btn1'  href='./#'>Read more</Button>
-                                            </CardText>
-                                            
+                                            <p className='sm'> Empowering Online Success: Cutting-Edge Ecommerce Solutions for Businesses</p>
+                                            <Button variant='dark' className='btn1' href='./#'>Read more</Button>
+                                        </CardText>
+
                                     </CardBody>
                                 </Card>
 
                             </Col>
                             <Col lg={4} className='mb-3'>
                                 <Card className='align-items-center custom-card'>
-                                    <CardImg variant="top" src="./src/Components/Image/seo-services.png" fluid style={{ maxHeight: '50px', maxWidth: "50px"}} className='my-3' />
+                                    <CardImg variant="top" src="./src/Components/Image/seo-services.png" fluid style={{ maxHeight: '50px', maxWidth: "50px" }} className='my-3' />
                                     <CardBody className='text-center'>
                                         <CardTitle>
                                             <h3 className='hed3'>Search Enggine  Optimization</h3>
                                         </CardTitle>
                                         <CardText >
                                             <p className='sm'>Unlocking Digital Visibility: Maximizing Results with Search Engine Optimization Lo</p>
-                                            
-                                            <Button variant='dark' className='btn1'  href='./#'>Read more</Button>
+
+                                            <Button variant='dark' className='btn1' href='./#'>Read more</Button>
                                         </CardText>
                                     </CardBody>
                                 </Card>
@@ -245,23 +246,21 @@ export default function Home() {
                         <Row className='d-flex justify-content-center '>
                             <Col lg={4} className='mb-3'>
                                 <Card className='align-items-center custom-card'>
-                                    <CardImg variant="top" src="./src/Components/Image/local-listings.png" fluid style={{ maxHeight: '50px', maxWidth: "40px" }}  className='my-3'/>
+                                    <CardImg variant="top" src="./src/Components/Image/local-listings.png" fluid style={{ maxHeight: '50px', maxWidth: "40px" }} className='my-3' />
                                     <CardBody className='text-center'>
                                         <CardTitle>
                                             <h3 className='hed3'>Google Local Listing</h3>
                                         </CardTitle>
                                         <CardText >
                                             <p className='sm'>Boost Your Local Presence: Harnessing the Power of Google Local Listings</p>
-                                            <Button variant='dark' className='btn1'href='./#'>Read more</Button>
+                                            <Button variant='dark' className='btn1' href='./#'>Read more</Button>
                                         </CardText>
                                     </CardBody>
                                 </Card>
-
-
                             </Col>
                             <Col lg={4} className='mb-3'>
                                 <Card className='align-items-center custom-card'>
-                                    <CardImg variant="top" src="./src/Components/Image/adwords-ppc.png" fluid style={{ maxHeight: '50px', maxWidth: "40px" }}className='my-3' />
+                                    <CardImg variant="top" src="./src/Components/Image/adwords-ppc.png" fluid style={{ maxHeight: '50px', maxWidth: "40px" }} className='my-3' />
                                     <CardBody className='text-center'>
                                         <CardTitle>
                                             <h3 className='hed3'>Google Adwords(PPC)</h3>
@@ -276,14 +275,14 @@ export default function Home() {
                             </Col>
                             <Col lg={4} className='mb-3'>
                                 <Card className='align-items-center custom-card'>
-                                    <CardImg variant="top" src="./src/Components/Image/smo-services.png" fluid style={{ maxHeight: '50px', maxWidth: "40px"}}className='my-3' />
+                                    <CardImg variant="top" src="./src/Components/Image/smo-services.png" fluid style={{ maxHeight: '50px', maxWidth: "40px" }} className='my-3' />
                                     <CardBody className='text-center '>
                                         <CardTitle>
                                             <h3 className='hed3'>Social Media Optimization</h3>
                                         </CardTitle>
                                         <CardText>
                                             <p className='sm'>Mastering Social Media Optimization (SMO) for Success</p>
-                                            <Button variant='dark' className='btn1'  href='./#'>Read more</Button>
+                                            <Button variant='dark' className='btn1' href='./#'>Read more</Button>
                                         </CardText>
                                     </CardBody>
                                 </Card>
@@ -292,21 +291,77 @@ export default function Home() {
 
                         </Row>
                     </Col>
+                </Row>
+
+                <Row>
+                    <Col>
+
+                    </Col>
+                </Row>
+
+                <Row className='d-flex justify-content-center flex-wrap mb-4' style={{backgroundColor:" #3B7FBF"}}>
+                    <div className='text-center'>
+                        <h2 className='hed2 text-light'>Our Clients</h2>
+                        <p className='sm text-light'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, a!</p>
+                    </div>
+                    <Col>
+                        <Marquee>
+                            <div className='m-1 rounded-xl flex space-x-5 p-4 '>
+                                <img src="https://razobyte.com/wp-content/uploads/2019/04/image005-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
+                            </div>
+                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <img src="https://razobyte.com/wp-content/uploads/2019/04/image004-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
+                            </div>
+                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <img src="https://razobyte.com/wp-content/uploads/2019/04/galuku_logo-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
+                            </div>
+                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <img src="https://razobyte.com/wp-content/uploads/2019/04/ohreco-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
+
+                            </div>
+                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <img src="https://razobyte.com/wp-content/uploads/2019/04/image009-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
+                            </div>
+                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <img src="https://razobyte.com/wp-content/uploads/2019/04/yes-creation-1-300x200.png" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
+                            </div>
+                        </Marquee>
+                        <Marquee autoFill pauseOnClick direction='right'>
+                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <img src="https://razobyte.com/wp-content/uploads/2019/04/image008-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
+                            </div>
+                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <img src="https://razobyte.com/wp-content/uploads/2019/04/image007-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
+                            </div>
+                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <img src="https://razobyte.com/wp-content/uploads/2019/04/image006-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
+                            </div>
+                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <img src="https://razobyte.com/wp-content/uploads/2019/04/avon-logo-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
+                            </div>
+                            <div  className='m-1 rounded-xl flex space-x-5 p-4'> 
+                                <img src="https://razobyte.com/wp-content/uploads/2019/04/astro-logo-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
+                            </div>
+                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <img src="https://razobyte.com/wp-content/uploads/2019/04/verona-logo3-1-300x200.png" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
+                            </div>
+                        </Marquee>
+                    </Col>
 
                 </Row>
 
 
-                
-
-
-            
 
 
 
 
 
 
-               
+
+
+
+
+
 
 
 

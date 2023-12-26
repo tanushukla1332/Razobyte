@@ -32,7 +32,7 @@ export default function Header() {
             </Nav>
             <Nav className="ml-auto">
               <NavLink href='/login' style={{ marginLeft:"1em",color:"white" }}> 
-              <Button variant="light" className='btn1'>Book a Session</Button>
+              <Button variant="light" className='btnmain'>Book a Session</Button>
               </NavLink>
             </Nav>
           </NavbarCollapse>
