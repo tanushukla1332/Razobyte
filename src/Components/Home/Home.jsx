@@ -11,46 +11,61 @@ import { useState, useEffect } from 'react';
 import { FcGoogle } from "react-icons/fc";
 import { FaLinkedin, FaTwitter, FaApple } from "react-icons/fa";
 import Marquee from 'react-fast-marquee';
+import Data from '../../Data.json'
 
 
 
 
 
 export default function Home() {
-    const [text, setText] = useState(0)
-    const [image, setImage] = useState(0)
-
-    const array = [
-        "welcome to Razobyte SofTech pvt ltd this is a web devloping compnay",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nostrum",
-        "Adaptability empowers growth, kindness fosters connection, curiosity",
-        "Adapt, connect, learn; kindness and gratitude fuel resilience growth",
-        "Code, create,debug; transforming lines into meaningful innovation passionate"
-
-    ]
-    const imgdata = [
-        "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg",
-        "https://cdn.pixabay.com/photo/2017/01/22/12/07/imac-1999636_1280.png",
-        "https://razobyte.com/wp-content/uploads/2019/05/1a_5-SAP-Softwares-Every-Industry-Should-Be-Utilising.jpg",
-        "https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg"
+    const[currentTitle,setCurrentTitle]=useState(0)
+    const[subheading,setSubheading]=useState(0)
+    const[paras,setParas]=useState(0)
+    const[Allimagess,setAllImage]=useState(0)
 
 
 
-    ]
-    useEffect(() => {
-        const intervaliId = setInterval(() => {
-            setText((prev) => (prev + 1) % array.length)
-        }, 1000)
-        return () => clearInterval(intervaliId)
+    const titles=Data.map((data)=>data.title)
+    const subtitles=Data.map((data)=>data.subTitle)
+    const paragraphs=Data.map((data)=>data.paragraph)
+    const allimages=Data.map((data)=>data.image)
 
-    }, [])
-    useEffect(() => {
-        const intervaliId = setInterval(() => {
-            setImage((prev) => (prev + 1) % imgdata.length)
-        }, 3000)
-        return () => clearInterval(intervaliId)
+    // For heading
+    useEffect(()=>{
+const intervalId=setInterval(()=>{
+    setCurrentTitle((prev)=>(prev+1)%titles.length)
+},3000)
+    return()=>clearInterval(intervalId)
 
-    }, [])
+    },[titles.length])
+
+      // For Subheading
+      useEffect(()=>{
+        const intervalId=setInterval(()=>{
+            setSubheading((prev)=>(prev+1)%subtitles.length)
+        },3000)
+            return()=>clearInterval(intervalId)
+        
+            },[subtitles.length])
+// For paragrap
+useEffect(()=>{
+    const intervalId=setInterval(()=>{
+        setParas((prev)=>(prev+1)%paragraphs.length)
+    },3000)
+        return()=>clearInterval(intervalId)
+    
+        },[paragraphs.length])
+// ForImages
+useEffect(()=>{
+    const intervalId=setInterval(()=>{
+        setAllImage((prev)=>(prev+1)%allimages.length)
+    },3000)
+        return()=>clearInterval(intervalId)
+    
+        },[allimages.length])
+
+
+    
 
     return (
 
@@ -59,17 +74,16 @@ export default function Home() {
                 <Row className='py-3' style={{ backgroundColor: "#3B7FBF" }}
                 >
                     <Col className='text-light'>
-                        <h1 className='hed1  mt-5 '>Revolutionize </h1>
-                        <h3 className=' hed3 '>Your Business with Razobyte's Innovative Tech &
-                            Marketing Mastery
+                        <h1 className='hed1  mt-5 '>{titles[currentTitle]} </h1>
+                        <h3 className=' hed3 '>{subtitles[subheading]}
                         </h3>
-                        <p className=' sm '>Unleash the full potential of your brand with Razobyte's integrated IT solutions and creative digital marketing strategies. Our expertise bridges the latest technology with market-leading insights, ensuring your business stays ahead in a dynamic digital landscape. Partner with Razobyte to navigate the future of digital excellence.</p>
+                        <p className=' sm '>{paragraphs[paras]}</p>
                         <Button className=" btm mr-5" variant='dark'>Get in touch </Button>
                         <Button variant='dark' className=" btm mr-5 my-3">About Us</Button>
                     </Col>
                     <Col md={7} className='mt-2'>
-                        <Image src="https://razobyte.com/wp-content/uploads/2019/08/laptop-img.png" alt='' fluid
-                            className='rounded-1'
+                        <Image src={allimages[Allimagess]} alt='' fluid
+                            className='rounded-1' style={{width:"100%"}}
                         />
                     </Col>
                 </Row>
@@ -271,7 +285,6 @@ export default function Home() {
                                         </CardText>
                                     </CardBody>
                                 </Card>
-
                             </Col>
                             <Col lg={4} className='mb-3'>
                                 <Card className='align-items-center custom-card'>
@@ -299,56 +312,80 @@ export default function Home() {
                     </Col>
                 </Row>
 
-                <Row className='d-flex justify-content-center flex-wrap mb-4' style={{backgroundColor:" #3B7FBF"}}>
+                <Row className='d-flex justify-content-center flex-wrap mb-4' style={{ backgroundColor: " #3B7FBF" }}>
                     <div className='text-center'>
                         <h2 className='hed2 text-light'>Our Clients</h2>
                         <p className='sm text-light'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, a!</p>
                     </div>
                     <Col>
                         <Marquee>
-                            <div className='m-1 rounded-xl flex space-x-5 p-4 '>
+                            <div className='m-1 flex space-x-5 p-4 '>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/image005-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
                             </div>
-                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                            <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/image004-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
                             </div>
-                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                            <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/galuku_logo-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
                             </div>
-                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                            <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/ohreco-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
 
                             </div>
-                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                            <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/image009-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
                             </div>
-                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                            <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/yes-creation-1-300x200.png" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
                             </div>
                         </Marquee>
                         <Marquee autoFill pauseOnClick direction='right'>
-                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                            <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/image008-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
                             </div>
-                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                            <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/image007-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
                             </div>
-                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                            <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/image006-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
                             </div>
-                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                            <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/avon-logo-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
                             </div>
-                            <div  className='m-1 rounded-xl flex space-x-5 p-4'> 
+                            <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/astro-logo-300x200.jpg" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
                             </div>
-                            <div  className='m-1 rounded-xl flex space-x-5 p-4'>
+                            <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/verona-logo3-1-300x200.png" alt="" className='img-fluid' style={{ width: "300px", height: "200px" }} />
                             </div>
                         </Marquee>
                     </Col>
 
                 </Row>
+
+                <Row>
+                <h2>   Services </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolorum.</p>
+             
+
+                    <Col md={4}  className='mb-4'>
+                        <Card style={{backgroundImage:"url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ1KOuUrddsgD3p8ffWyqFfHa3z77CixocAg&usqp=CAU)" ,height:"50vh",width:"600px",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} className='card-with-button '>
+                            <CardBody className='text-light 'style={{marginTop:"13rem"}}>
+                                <CardTitle>
+                                    <h3 className='hed3 fw-bold' >Social Media Optimization</h3>
+                                </CardTitle>
+                                <CardText>
+                                    <p className='sm fw-bold'>Mastering Social Media Optimization (SMO) for Success</p>
+                                </CardText>
+                                <Button variant='dark'className='transparent-button'>Learn more</Button>
+                            </CardBody>
+                        </Card>
+
+                    </Col>
+                </Row>
+
+
+
 
 
 

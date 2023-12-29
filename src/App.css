@@ -123,6 +123,35 @@ input::-webkit-outer-spin-button,
     outline: none!important;
 
 }
+.card-with-button{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+   
+}
+.transparent-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius:50%!important;
+    cursor: pointer;
+    outline: none;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: -1; /* Initially hidden */
+    font-weight: 500px!important;
+    border: none!important;
+}
+  
+  .card-with-button:hover .transparent-button {
+    z-index: 1; /* Show on hover */
+    background-color: rgba(0, 0, 0, 0.397);
+    border: none!important;
+    font-weight: 500px!important;
+ 
+  }
 
 figcaption{
     position: absolute;
